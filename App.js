@@ -1,20 +1,16 @@
-let parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I am a h1 tag"),
-    React.createElement("h2", {}, "I am a h2 tag"),
-  ]),
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I am a h1 tag"),
-    React.createElement("h2", {}, "I am a h2 tag"),
-  ]),
-]);
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// const heading = React.createElement(
-//   "h1",
-//   { id: "heading" },
-//   "Hello World from React"
-// ); // createElement("tag", {attributes}, "content" )
+const Title = () => <h1 id="heading">Namaste React JSX</h1>; //React element
+
+const HeadingComponent = () => (
+  <div id="container">
+    <Title />
+    <Title></Title>
+    {Title()}
+    <h1>Namaste React FC</h1>
+  </div>
+);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// console.log(heading); //logs the react element which is a JS object of type h1, and has props: children+attributes
-
-root.render(parent);
+root.render(<HeadingComponent />);
