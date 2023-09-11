@@ -21,3 +21,29 @@
 - HTTPS
 - Tree Shaking - remove unused code
 - Different dev and prod bundles
+
+# Food Orderig App - Kol 34
+
+/\*\*
+
+- Header
+- - Logo
+- - Nav Items
+- Body
+- - Search
+- - RestaurantContainer
+-      - RestaurantCard
+-        - Image
+-        - Star rating, name of res, cuisine, time for delivery
+- Footer
+- - Links
+- - Copyright
+- - Contact
+    \*/
+
+# React Hooks
+
+(normal JS utility functions)
+
+- useState() - superpowerful state variable in react
+- useEffect
