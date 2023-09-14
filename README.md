@@ -47,3 +47,8 @@
 
 - useState() - superpowerful state variable in react
 - useEffect
+
+# 2 types of Routing in Web Apps
+
+- Client Side Routing: The app has all the components loaded in the very first time, so when we navigate it only refreshes the component.
+- Server Side Routing: has to make a network calls to the server, fetch a page, every time we navigate to a page
